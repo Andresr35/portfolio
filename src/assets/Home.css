@@ -1,0 +1,234 @@
+.home {
+  position: absolute;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  background: var(--background, #f4f6f7);
+  /* After delay */
+  animation-delay: 1600ms;
+  /* Change to: "Variant2"; */
+  /* Animate: Smart animate; */
+  animation-name: cover;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  justify-content: center;
+  height: 2496px;
+  color: var(--text);
+  flex-direction: column;
+}
+@media screen and (min-height: 900px) {
+  .home {
+    height: 2700px;
+  }
+}
+.intro {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 383px;
+  height: 66px;
+}
+.hero p {
+  text-align: center;
+  color: var(--text, #0b0d0e);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Hubballi;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+}
+.hello {
+  /* After delay */
+  animation-delay: 2800ms;
+  animation-name: helloAppear;
+  animation-fill-mode: both;
+  /*  Change to: "Variant2"; */
+  /*  Animate: Smart animate; */
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+.software {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  /* After delay */
+  animation-delay: 5.8s;
+  /* Change to: "Variant3"; */
+  animation-name: appear;
+  /* Animate: Smart animate; */
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
+}
+.arrow {
+  position: absolute;
+  margin: 0 auto;
+  top: 600px;
+  left: 0;
+  right: 0;
+  animation-name: appear;
+  animation-delay: 6.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
+}
+.arrow img {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation-name: jounce;
+  animation-delay: 7s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+}
+.aboutMe {
+  font-family: Hubballi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+.aboutMe h2 {
+  margin: 0;
+  position: absolute;
+  top: 84px;
+  left: 4%;
+}
+.aboutContainer {
+  top: 159px;
+  position: absolute;
+  left: 0;
+  width: 76%;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.icons div {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 450px) {
+  .aboutContainer p {
+    font-size: 20px;
+  }
+  .icons div {
+    width: 32px;
+    height: 32px;
+  }
+}
+.icons div img {
+  width: 100%;
+  height: auto;
+}
+.linkBadges {
+  position: absolute;
+  top: 705px;
+  width: 100%;
+}
+.linkBadges button {
+  position: absolute;
+  width: 118px;
+  height: 35px;
+  border-radius: 10px;
+  background: var(--buttons-secondary, #a5bfc8);
+  outline: none;
+  border: none;
+  color: var(--text, #0b0d0e);
+  font-family: Hubballi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  right: 14%;
+}
+.linkBadges button:hover {
+  background: var(--buttons-primary, #6b8e9c);
+  color: var(--background, #f4f6f7);
+}
+.click {
+  animation-name: click;
+  animation-duration: 150ms;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+.projects {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+@keyframes jounce {
+  0% {
+    height: 46px;
+  }
+  100% {
+    height: 70px;
+  }
+}
+@keyframes cover {
+  0% {
+    top: 2496px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes helloAppear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes click {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.4) inset;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
