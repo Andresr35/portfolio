@@ -152,7 +152,7 @@
   top: 705px;
   width: 100%;
 }
-.linkBadges button {
+.linkBadges .button {
   position: absolute;
   width: 118px;
   height: 35px;
@@ -165,13 +165,18 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 35px;
   padding: 0;
   right: 14%;
+  text-decoration: none;
+  text-align: center;
 }
-.linkBadges button:hover {
+.linkBadges .button:hover {
   background: var(--buttons-primary, #6b8e9c);
   color: var(--background, #f4f6f7);
+}
+.linkBadges .badge {
+  margin-left: 6%;
 }
 .click {
   animation-name: click;

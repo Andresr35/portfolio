@@ -64,19 +64,21 @@ const Home = () => {
           </div>
         </div>
         <div className="linkBadges">
-          <a href="">
+          <a className="badge" href="">
             <img src="/linkedIn.svg" alt="linkedIn" />
           </a>
-          <a href="">
+          <a className="badge" href="">
             <img src="/github.svg" alt="github" />
           </a>
-          <button
+          <a
+            href="/resume.pdf"
+            download="Andres Resume"
             onClick={() => setAnimate(true)}
             onAnimationEnd={() => setAnimate(false)}
-            className={animate ? "click" : ""}
+            className={animate ? "click button" : "button"}
           >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
       <div className="projects"></div>
