@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../assets/Home.css";
+import Badge from "./Badge";
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -64,10 +65,20 @@ const Home = () => {
           </div>
         </div>
         <div className="linkBadges">
-          <a className="badge" href="">
+          <a
+            className="badge"
+            href="https://www.linkedin.com/in/and-r/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="/linkedIn.svg" alt="linkedIn" />
           </a>
-          <a className="badge" href="">
+          <a
+            className="badge"
+            href="https://github.com/Andresr35"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="/github.svg" alt="github" />
           </a>
           <a
@@ -81,7 +92,78 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="projects"></div>
+      <div className="projects">
+        <Badge
+          repoName="valtra"
+          description="PERN stack website for valtra"
+          languange="javascript"
+          backgroundColor="#f7df1e"
+          link="https://github.com/Andresr35/Valtra"
+        />
+        <Badge
+          repoName="sereneBook"
+          description="The Odin Project: OdinBook"
+          languange="javascript"
+          backgroundColor="#F7DF1E"
+          link="https://github.com/Andresr35/sereneBook"
+        />
+        <Badge
+          repoName="5851-Code"
+          description="FRC Robot code"
+          languange="java"
+          backgroundColor="#8B4B1D"
+          link="https://github.com/Andresr35/5851-Code"
+        />
+        <Badge
+          repoName="wheresWaldo"
+          description="The Odin Project: Photo taggin app"
+          languange="javascrip"
+          backgroundColor="#F7DF1E"
+          link="https://github.com/Andresr35/wheresWaldo"
+        />
+        <Badge
+          repoName="adminDashboard"
+          description="Admin dashboard for the Odin Project"
+          languange="html"
+          backgroundColor="#E34F26"
+          link="https://github.com/Andresr35/adminDashboard"
+        />
+        <Badge
+          repoName="plantProject"
+          description="ECE3391 class plant project"
+          languange="C++"
+          backgroundColor="#00599C"
+          link="https://github.com/Andresr35/plantProject"
+        />
+        <Badge
+          repoName="3300VerilogProjects"
+          description="digital circuit design using verilog"
+          languange="Verilog"
+          backgroundColor="#B2B7F8"
+          link="https://github.com/Andresr35/3300VerilogProjects"
+        />
+        <Badge
+          repoName="inforOrders"
+          description="Selenium project for legacy infor app"
+          languange="Python"
+          backgroundColor="#3776AB"
+          link="https://github.com/Andresr35/inforOrders"
+        />
+        <Badge
+          repoName="odinLandingPage"
+          description="Landing Page for Odin Project"
+          languange="css"
+          backgroundColor="#1572B6"
+          link="https://github.com/Andresr35/odinLandingPage"
+        />
+        <Badge
+          repoName="signUpForm"
+          description="Sign Up form for Odin Project"
+          languange="html"
+          backgroundColor="#E34F26"
+          link="https://github.com/Andresr35/signUpForm"
+        />
+      </div>
     </div>
   );
 };

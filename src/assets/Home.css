@@ -189,6 +189,12 @@
   width: 100%;
   flex: 1;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.projects a {
 }
 @keyframes jounce {
   0% {

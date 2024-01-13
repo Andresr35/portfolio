@@ -1,0 +1,70 @@
+.container {
+  position: relative;
+  display: block;
+  width: 341px;
+  height: 90px;
+  border-radius: 7px;
+  border: 3px solid var(--accent, #86adbb);
+  background: var(--buttons-primary, #6b8e9c);
+}
+.repoName {
+  color: var(--background);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 42px;
+  top: 4px;
+
+  /* Habbibi small title */
+  font-family: Hubballi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.description {
+  position: absolute;
+  color: var(--background);
+  top: 35px;
+  left: 15px;
+
+  /* Habbibi descrioption */
+  font-family: Hubballi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bookIcon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  left: 15px;
+  stroke-width: 1px;
+  stroke: #000;
+}
+.languange {
+  color: #fff;
+
+  /* Habbibi descrioption */
+  font-family: Hubballi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  position: absolute;
+  top: 56px;
+  left: 42px;
+}
+.languangeIcon {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 58px;
+  left: 15px;
+}
