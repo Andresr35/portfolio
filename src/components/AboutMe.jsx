@@ -53,6 +53,9 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+      <a className="arrow" href="#works">
+        <img src="/arrow.svg" alt="arrow" />
+      </a>
       <div className="linkBadges">
         <a
           className="badge"

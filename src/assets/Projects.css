@@ -1,3 +1,6 @@
+#works {
+  min-height: 100vh;
+}
 .projects {
   width: 100%;
   flex: 1;
@@ -18,7 +21,5 @@
   position: relative;
   top: 0;
   left: 4%;
-}
-#works {
-  min-height: 900px;
+  width: fit-content;
 }

@@ -13,19 +13,14 @@
   animation-timing-function: ease-out;
   animation-duration: 1s;
   justify-content: center;
-  height: 2496px;
+
   color: var(--text);
   flex-direction: column;
-}
-@media screen and (min-height: 900px) {
-  .home {
-    height: 2700px;
-  }
 }
 .intro {
   width: 100%;
   flex: 1;
-  position: relative;
+  min-height: 100vh;
 }
 .hero {
   margin-left: auto;
@@ -93,91 +88,18 @@
   animation-delay: 7s;
   animation-timing-function: ease-in-out;
   animation-duration: 500ms;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-.aboutMe {
-  font-family: Hubballi;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 100%;
-  flex: 1;
-  position: relative;
-}
-.aboutMe h2 {
-  margin: 0;
-  position: absolute;
-  top: 84px;
-  left: 4%;
-}
-.aboutContainer {
-  top: 159px;
-  position: absolute;
-  left: 0;
-  width: 76%;
-  right: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+@media screen and (max-height: 900px) {
+  .hero {
+    top: 300px;
+  }
+  .arrow {
+    top: 500px;
+  }
 }
 
-.icons {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.icons div {
-  width: 48px;
-  height: 48px;
-}
-@media screen and (max-width: 450px) {
-  .aboutContainer p {
-    font-size: 20px;
-  }
-  .icons div {
-    width: 32px;
-    height: 32px;
-  }
-}
-.icons div img {
-  width: 100%;
-  height: auto;
-}
-.linkBadges {
-  position: absolute;
-  top: 705px;
-  width: 100%;
-}
-.linkBadges .button {
-  position: absolute;
-  width: 118px;
-  height: 35px;
-  border-radius: 10px;
-  background: var(--buttons-secondary, #a5bfc8);
-  outline: none;
-  border: none;
-  color: var(--text, #0b0d0e);
-  font-family: Hubballi;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 35px;
-  padding: 0;
-  right: 14%;
-  text-decoration: none;
-  text-align: center;
-}
-.linkBadges .button:hover {
-  background: var(--buttons-primary, #6b8e9c);
-  color: var(--background, #f4f6f7);
-}
-.linkBadges .badge {
-  margin-left: 6%;
-}
 .click {
   animation-name: click;
   animation-duration: 150ms;
@@ -185,17 +107,7 @@
   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
 }
-.projects {
-  width: 100%;
-  flex: 1;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  row-gap: 10px;
-}
-.projects a {
-}
+
 @keyframes jounce {
   0% {
     height: 46px;
