@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../assets/aboutMe.css";
+import Github from "../assets/icons/Github";
+import LinkedIn from "../assets/icons/LinkedIn";
 
 const AboutMe = () => {
   const [animate, setAnimate] = useState(false);
@@ -63,7 +65,7 @@ const AboutMe = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="/linkedIn.svg" alt="linkedIn" />
+          <LinkedIn />
         </a>
         <a
           className="badge"
@@ -71,9 +73,8 @@ const AboutMe = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="/github.svg" alt="github" />
+          <Github />
         </a>
-
         <a
           href="/resume.pdf"
           download="Andres Resume"
