@@ -55,3 +55,7 @@ a {
   z-index: 3;
   position: relative;
 }
+.threeJS {
+  width: 100%;
+  height: 50vh;
+}
