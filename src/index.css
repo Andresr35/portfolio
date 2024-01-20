@@ -44,7 +44,7 @@ p {
   z-index: 2;
   top: 0;
   width: 100%;
-  height: 250vh;
+  height: 300vh;
 }
 #root {
   position: absolute;
@@ -55,7 +55,8 @@ a {
   z-index: 3;
   position: relative;
 }
-.threeJS {
-  width: 100%;
-  height: 50vh;
+@media screen and (max-width: 500px) {
+  .canvasContainer {
+    height: 150vh;
+  }
 }
