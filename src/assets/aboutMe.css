@@ -17,6 +17,11 @@
   left: 4%;
   width: fit-content;
 }
+@media screen and (min-width: 500px) {
+  .aboutMe h2 {
+    top: 10vw;
+  }
+}
 .aboutContainer {
   top: 0;
   bottom: 0;
